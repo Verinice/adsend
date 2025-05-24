@@ -277,18 +277,43 @@
       adWrapper.style.maxWidth = width + 'px';
       adWrapper.style.maxHeight = height + 'px';
     }
-    // Replicate all computed styles and classes from sibling
+    // --- Enhanced: Copy sibling element tags and styles up to selector ---
     let siblings = Array.from(container.children).filter(
       el => el !== adWrapper && !el.classList.contains('ad-send-banner')
     );
-    // If copySiblingSelector is set, use the first matching element in the container as the style reference
+    let adHtml = getNextAd(container, adHtmlArr);
     if (copySiblingSelector) {
-      const customRef = container.querySelector(copySiblingSelector);
-      if (customRef) siblings = [customRef];
+      // Find the closest matching sibling (not inside adWrapper)
+      let customRef = container.querySelector(copySiblingSelector);
+      if (customRef) {
+        // Clone the tag and all computed styles
+        const clone = customRef.cloneNode(false); // shallow clone
+        const refStyle = window.getComputedStyle(customRef);
+        for (let i = 0; i < refStyle.length; i++) {
+          const prop = refStyle[i];
+          clone.style.setProperty(prop, refStyle.getPropertyValue(prop), refStyle.getPropertyPriority(prop));
+        }
+        // Wrap the ad in the same tag as the sibling, with all classes/attributes
+        clone.className = customRef.className;
+        clone.id = customRef.id ? customRef.id + '-ad' : '';
+        // Place the ad HTML inside the clone, wrapped in <a> if targetUrl is present
+        // Extract imageUrl and targetUrl from the adHtmlArr (since we build adHtmlArr from config)
+        let bannerObj = (banners && banners.length) ? (config.banners || []).find(b => adHtml.includes(b.imageUrl)) : null;
+        if (bannerObj && bannerObj.targetUrl) {
+          clone.innerHTML = `<a href="${bannerObj.targetUrl}" target="_blank" rel="noopener noreferrer">${adHtml}</a>`;
+        } else {
+          clone.innerHTML = adHtml;
+        }
+        adWrapper.innerHTML = '';
+        adWrapper.appendChild(clone);
+        siblings = [customRef];
+      }
+    } else {
+      // Default: replicate styles from siblings as before
+      replicateSiblingStyles(adWrapper, siblings);
+      adWrapper.innerHTML = adHtml;
     }
-    replicateSiblingStyles(adWrapper, siblings);
-    const adHtml = getNextAd(container, adHtmlArr);
-    adWrapper.innerHTML = adHtml;
+    // ...existing code for images/iframes/animation...
     const adContent = adWrapper.firstElementChild;
     if (adContent) {
       adContent.style.width = '100%';
@@ -333,7 +358,7 @@
   let copySiblingSelector = null;
   async function fetchAllBannersFromFile() {
     try {
-      const configUrl = window.location.origin + '/ad-config.json';
+      const configUrl = 'https://cdn.jsdelivr.net/gh/Verinice/adsend@d94bb5e3586c3686a74aefe378a7106cac70a599/public/ad-config.json';
       const res = await fetch(configUrl);
       if (!res.ok) return;
       const configs = await res.json();

@@ -1,1 +1,483 @@
-function a0_0x4484(_0x1f0069,_0xa1f50c){const _0x5c365e=a0_0x1673();return a0_0x4484=function(_0x5e4f3d,_0x533557){_0x5e4f3d=_0x5e4f3d-0x17a;let _0x16732c=_0x5c365e[_0x5e4f3d];return _0x16732c;},a0_0x4484(_0x1f0069,_0xa1f50c);}(function(_0x53c6d9,_0x4be9fe){const _0x44508f=a0_0x4484,_0x5c4d6c=_0x53c6d9();while(!![]){try{const _0x4651d4=-parseInt(_0x44508f(0x1df))/0x1*(-parseInt(_0x44508f(0x1a2))/0x2)+parseInt(_0x44508f(0x1e5))/0x3*(parseInt(_0x44508f(0x1bc))/0x4)+-parseInt(_0x44508f(0x1e6))/0x5*(parseInt(_0x44508f(0x184))/0x6)+parseInt(_0x44508f(0x18b))/0x7+parseInt(_0x44508f(0x1d5))/0x8+parseInt(_0x44508f(0x214))/0x9+parseInt(_0x44508f(0x1f5))/0xa*(-parseInt(_0x44508f(0x190))/0xb);if(_0x4651d4===_0x4be9fe)break;else _0x5c4d6c['push'](_0x5c4d6c['shift']());}catch(_0x51f8ca){_0x5c4d6c['push'](_0x5c4d6c['shift']());}}}(a0_0x1673,0x4fc4e),(function(){const _0xeae0c=a0_0x4484,_0x5f5c97={'hNuiy':function(_0x15b18d,_0x207ab9){return _0x15b18d*_0x207ab9;},'pnYdQ':function(_0x3f3ced,_0x1cd76a){return _0x3f3ced<_0x1cd76a;},'nXbGA':_0xeae0c(0x1d0),'ABkwo':function(_0x5a47c1,_0x3670a7){return _0x5a47c1!==_0x3670a7;},'ERhhS':function(_0x5247c6,_0x12be92){return _0x5247c6+_0x12be92;},'oflIn':_0xeae0c(0x19e),'TlRYW':'ad-img-anim','FyNvb':'100%','fTHtS':'ad-flip-in','OnIpc':_0xeae0c(0x202),'RpmXZ':_0xeae0c(0x209),'opQPw':'ad-fade-in','GMkFC':_0xeae0c(0x1cf),'HLJbU':_0xeae0c(0x1ff),'wunyQ':function(_0x11fb62,_0x19414c){return _0x11fb62+_0x19414c;},'AgZrw':_0xeae0c(0x181),'ZKfJW':_0xeae0c(0x1f7),'RmZmx':_0xeae0c(0x185),'RQWIi':'.ad-send-banner','xTGuM':'3|0|4|2|7|11|12|1|5|9|10|6|8','JDljh':'hidden','SKuUZ':_0xeae0c(0x196),'AMHmv':_0xeae0c(0x1fd),'CTOIL':_0xeae0c(0x199),'fnNjG':function(_0x137943,_0x3dfd94,_0x84452b){return _0x137943(_0x3dfd94,_0x84452b);},'klAaW':_0xeae0c(0x20a),'shYJq':function(_0x4adc42,_0xd9c418,_0x1fddc4){return _0x4adc42(_0xd9c418,_0x1fddc4);},'gHZVN':function(_0x4b7ff5,_0x589684){return _0x4b7ff5(_0x589684);},'shjQu':function(_0x395a9b,_0x41222d){return _0x395a9b>=_0x41222d;},'aznaq':function(_0x29e2df,_0xcbf6f1){return _0x29e2df<_0xcbf6f1;},'yhhVV':function(_0x1f479c,_0x4286dc){return _0x1f479c-_0x4286dc;},'CCBrw':function(_0x1be7ce,_0x5a24e1){return _0x1be7ce===_0x5a24e1;},'CvCIk':function(_0x56b30d,_0x18a784){return _0x56b30d+_0x18a784;},'rsvNB':'4|3|5|0|2|6|1','EYbAq':function(_0x5f0f24,_0x95dd14){return _0x5f0f24+_0x95dd14;},'oLiuM':function(_0x3e2364,_0x41972a,_0x1dc542){return _0x3e2364(_0x41972a,_0x1dc542);},'uOvLx':_0xeae0c(0x1b7),'RbRnE':function(_0x2bdb95,_0x44d4b7){return _0x2bdb95+_0x44d4b7;},'PkYBY':function(_0x53231d,_0x20e415){return _0x53231d(_0x20e415);},'ipefQ':function(_0x196e0b,_0x37735a){return _0x196e0b===_0x37735a;},'yZbjY':'object','rUKLe':function(_0x45a359,_0x56606f){return _0x45a359*_0x56606f;},'AALSF':_0xeae0c(0x1cb),'ZtwmM':function(_0x216e29,_0x34cecb,_0x19ef0d,_0x2c6c70){return _0x216e29(_0x34cecb,_0x19ef0d,_0x2c6c70);},'kHaxx':_0xeae0c(0x197),'dmXpR':'(((.+)+)+)+$','WbxWd':function(_0x5285b8,_0x1fc101,_0x53cb1d){return _0x5285b8(_0x1fc101,_0x53cb1d);},'zwswp':function(_0x753167){return _0x753167();},'CvmsQ':'[AdSend]\x20No\x20container\x20selectors\x20found\x20for\x20this\x20page.\x20Please\x20define\x20at\x20least\x20one\x20container/selector\x20in\x20ad-config.json.','OypLr':function(_0x57c1b7,_0x1b223d){return _0x57c1b7>_0x1b223d;},'WsEsg':function(_0x242c08,_0x41550b){return _0x242c08*_0x41550b;},'qEPWp':_0xeae0c(0x1a8),'dgTNu':_0xeae0c(0x183)},_0x5bdb57=(function(){let _0x2ffbc7=!![];return function(_0x4c3eba,_0x2c3105){const _0x289872=_0x2ffbc7?function(){if(_0x2c3105){const _0x5e3bef=_0x2c3105['apply'](_0x4c3eba,arguments);return _0x2c3105=null,_0x5e3bef;}}:function(){};return _0x2ffbc7=![],_0x289872;};}());function _0x36a698(_0x1e6d26){const _0x5a12bf=_0xeae0c;let _0x3a09eb=_0x1e6d26['length'],_0x4378a4,_0x46e2c2;while(_0x3a09eb){_0x46e2c2=Math[_0x5a12bf(0x1f0)](_0x5f5c97['hNuiy'](Math[_0x5a12bf(0x1f1)](),_0x3a09eb--)),_0x4378a4=_0x1e6d26[_0x3a09eb],_0x1e6d26[_0x3a09eb]=_0x1e6d26[_0x46e2c2],_0x1e6d26[_0x46e2c2]=_0x4378a4;}return _0x1e6d26;}function _0x568fc8(){const _0x5135cc=_0xeae0c;return window[_0x5135cc(0x1b8)][_0x5135cc(0x1cc)];}function _0x4349f7(){const _0x5d8f30=_0xeae0c;try{const _0x3eac62=document['currentScript']&&document[_0x5d8f30(0x1a5)][_0x5d8f30(0x19c)];if(_0x3eac62){const _0x1a301c=new URL(_0x3eac62,window['location'][_0x5d8f30(0x1fa)]);return _0x1a301c['origin'];}}catch{}return window['location'][_0x5d8f30(0x1fa)];}function _0x417165(_0x2999e9,_0x3112f1){const _0x3777c6=_0xeae0c;if(!_0x3112f1[_0x3777c6(0x1e1)])return;const _0x24a005=Array[_0x3777c6(0x180)](_0x3112f1)['find'](_0x4d632d=>_0x4d632d!==_0x2999e9&&window[_0x3777c6(0x1d6)](_0x4d632d)[_0x3777c6(0x18c)]!==_0x3777c6(0x206));if(!_0x24a005)return;const _0x3d2cc6=window[_0x3777c6(0x1d6)](_0x24a005);for(let _0x22aaa0=0x0;_0x5f5c97[_0x3777c6(0x1ba)](_0x22aaa0,_0x3d2cc6[_0x3777c6(0x1e1)]);_0x22aaa0++){const _0x41fd41=_0x3d2cc6[_0x22aaa0];_0x2999e9[_0x3777c6(0x213)][_0x3777c6(0x186)](_0x41fd41,_0x3d2cc6[_0x3777c6(0x216)](_0x41fd41),_0x3d2cc6[_0x3777c6(0x1c1)](_0x41fd41));}_0x2999e9['className']=_0x24a005[_0x3777c6(0x210)][_0x3777c6(0x1e0)]('\x20')[_0x3777c6(0x1e7)](_0x300525=>_0x300525&&_0x300525!==_0x3777c6(0x1d0))[_0x3777c6(0x218)]([_0x5f5c97[_0x3777c6(0x1c2)]])[_0x3777c6(0x18a)]('\x20'),_0x24a005['id']&&_0x5f5c97[_0x3777c6(0x19b)](_0x24a005['id'],_0x2999e9['id'])&&(_0x2999e9['id']=_0x5f5c97[_0x3777c6(0x1eb)](_0x24a005['id'],_0x5f5c97['oflIn']));}function _0x184ac5(_0x20eae7,_0x1bb317){const _0x8b6718=_0xeae0c,_0x4fca7a={'wLVzg':_0x5f5c97[_0x8b6718(0x195)]};_0x20eae7[_0x8b6718(0x187)]['remove'](_0x5f5c97[_0x8b6718(0x19d)],_0x5f5c97[_0x8b6718(0x219)],'ad-fade-in',_0x5f5c97['RpmXZ']);const _0x13bf19=[_0x5f5c97[_0x8b6718(0x19d)],_0x5f5c97['OnIpc'],_0x5f5c97['opQPw'],_0x5f5c97[_0x8b6718(0x1bd)]],_0xc1703e=_0x13bf19[Math['floor'](_0x5f5c97[_0x8b6718(0x1d4)](Math[_0x8b6718(0x1f1)](),_0x13bf19[_0x8b6718(0x1e1)]))];void _0x20eae7[_0x8b6718(0x1d3)],_0x20eae7[_0x8b6718(0x187)][_0x8b6718(0x1a1)](_0xc1703e),_0x20eae7[_0x8b6718(0x1f8)](_0x5f5c97[_0x8b6718(0x18e)],function _0x1b0db3(){const _0x5d4439=_0x8b6718;_0x20eae7[_0x5d4439(0x187)][_0x5d4439(0x1c0)](_0xc1703e),_0x20eae7[_0x5d4439(0x1e2)](_0x5d4439(0x1cf),_0x1b0db3);});const _0x230281=_0x20eae7[_0x8b6718(0x201)](_0x5f5c97[_0x8b6718(0x1a4)]);_0x230281['forEach'](_0x5a1238=>{const _0x4f8291=_0x8b6718;_0x5a1238[_0x4f8291(0x187)][_0x4f8291(0x1c0)](_0x5f5c97['TlRYW']),void _0x5a1238[_0x4f8291(0x1d3)],_0x5a1238[_0x4f8291(0x187)][_0x4f8291(0x1a1)](_0x5f5c97[_0x4f8291(0x17e)]);});if(_0x1bb317){const _0x230820=_0x1bb317[_0x8b6718(0x1db)]();_0x20eae7[_0x8b6718(0x213)]['height']=_0x5f5c97['wunyQ'](_0x230820[_0x8b6718(0x1b2)],'px'),_0x20eae7[_0x8b6718(0x213)][_0x8b6718(0x1af)]=_0x5f5c97['wunyQ'](_0x230820[_0x8b6718(0x1b2)],'px'),_0x20eae7[_0x8b6718(0x213)]['minHeight']=_0x230820['height']+'px',_0x20eae7[_0x8b6718(0x213)][_0x8b6718(0x1d9)]=_0x8b6718(0x1f2),_0x230281[_0x8b6718(0x21a)](_0xf70469=>{const _0x5de98e=_0x8b6718;_0xf70469[_0x5de98e(0x213)][_0x5de98e(0x1b2)]=_0x4fca7a['wLVzg'],_0xf70469['style'][_0x5de98e(0x1af)]=_0x4fca7a[_0x5de98e(0x1f9)],_0xf70469[_0x5de98e(0x213)][_0x5de98e(0x17c)]=_0x4fca7a[_0x5de98e(0x1f9)];});}else _0x20eae7[_0x8b6718(0x213)]['height']=_0x5f5c97[_0x8b6718(0x195)],_0x20eae7[_0x8b6718(0x213)]['maxHeight']=_0x5f5c97[_0x8b6718(0x195)],_0x20eae7[_0x8b6718(0x213)][_0x8b6718(0x17c)]=_0x5f5c97[_0x8b6718(0x195)],_0x20eae7[_0x8b6718(0x213)]['width']=_0x5f5c97[_0x8b6718(0x195)],_0x230281[_0x8b6718(0x21a)](_0x33bbaf=>{const _0x180887=_0x8b6718;_0x33bbaf[_0x180887(0x213)][_0x180887(0x1b2)]=_0x4fca7a[_0x180887(0x1f9)],_0x33bbaf['style']['maxHeight']=_0x4fca7a[_0x180887(0x1f9)],_0x33bbaf[_0x180887(0x213)][_0x180887(0x17c)]=_0x180887(0x1f2);});}const _0x44fbaa=new WeakMap();let _0x32c1db=[];function _0x285c7d(_0x202b94,_0x1b41cc){const _0x43eebb=_0xeae0c;let _0x42ecea=_0x44fbaa[_0x43eebb(0x1dc)](_0x202b94);return(!_0x42ecea||_0x42ecea[_0x43eebb(0x1e1)]===0x0)&&(_0x42ecea=_0x36a698([..._0x1b41cc]),_0x44fbaa[_0x43eebb(0x1cd)](_0x202b94,_0x42ecea)),_0x42ecea[_0x43eebb(0x1f4)]();}function _0x53040d(_0x23a4f7){const _0x3e8337=_0xeae0c;return!_0x32c1db[_0x3e8337(0x1e1)]&&(_0x32c1db=_0x36a698([..._0x23a4f7])),_0x32c1db['shift']();}function _0x6f2ce0(_0x7b6279,_0x4c1b36,_0xbe18e5){const _0x1acb9e=_0xeae0c,_0x47bf84={'eGEcJ':_0x5f5c97['FyNvb'],'VkRYX':_0x5f5c97['RmZmx'],'zFSdb':_0x1acb9e(0x181),'yKeyt':_0x1acb9e(0x1f7)};if(_0x4c1b36[_0x1acb9e(0x187)]['contains'](_0x5f5c97[_0x1acb9e(0x1c2)])||_0x4c1b36['id']?.[_0x1acb9e(0x1ab)]('banner-slot-')){let _0x492ef0=_0x4c1b36[_0x1acb9e(0x20b)](_0x5f5c97[_0x1acb9e(0x1b4)]);if(!_0x492ef0){const _0x176947=_0x5f5c97[_0x1acb9e(0x1ac)][_0x1acb9e(0x1e0)]('|');let _0x158dd2=0x0;while(!![]){switch(_0x176947[_0x158dd2++]){case'0':_0x492ef0[_0x1acb9e(0x210)]=_0x1acb9e(0x1d0);continue;case'1':_0x492ef0['style'][_0x1acb9e(0x18f)]=_0x5f5c97[_0x1acb9e(0x1c8)];continue;case'2':_0x492ef0[_0x1acb9e(0x213)][_0x1acb9e(0x1b2)]=_0x1acb9e(0x1f2);continue;case'3':_0x492ef0=document['createElement'](_0x5f5c97[_0x1acb9e(0x17d)]);continue;case'4':_0x492ef0[_0x1acb9e(0x213)][_0x1acb9e(0x1d9)]=_0x5f5c97['FyNvb'];continue;case'5':_0x492ef0['style'][_0x1acb9e(0x17c)]=_0x1acb9e(0x1e4);continue;case'6':_0x4c1b36[_0x1acb9e(0x1ad)]='';continue;case'7':_0x492ef0['style']['display']=_0x5f5c97['AMHmv'];continue;case'8':_0x4c1b36[_0x1acb9e(0x1a9)](_0x492ef0);continue;case'9':_0x492ef0[_0x1acb9e(0x213)][_0x1acb9e(0x1af)]=_0x1acb9e(0x1e4);continue;case'10':_0x492ef0['style'][_0x1acb9e(0x1e9)]=_0x5f5c97[_0x1acb9e(0x1e8)];continue;case'11':_0x492ef0[_0x1acb9e(0x213)][_0x1acb9e(0x1c4)]=_0x1acb9e(0x199);continue;case'12':_0x492ef0[_0x1acb9e(0x213)][_0x1acb9e(0x205)]=_0x5f5c97[_0x1acb9e(0x211)];continue;}break;}}const _0x2dc23c=_0x4c1b36['getBoundingClientRect']();_0x492ef0['style']['height']=_0x2dc23c['height']+'px',_0x492ef0['style']['maxHeight']=_0x5f5c97[_0x1acb9e(0x1eb)](_0x2dc23c[_0x1acb9e(0x1b2)],'px'),_0x492ef0[_0x1acb9e(0x213)]['minHeight']=_0x5f5c97['ERhhS'](_0x2dc23c[_0x1acb9e(0x1b2)],'px'),_0x492ef0[_0x1acb9e(0x213)][_0x1acb9e(0x1d9)]=_0x5f5c97[_0x1acb9e(0x195)];const _0x390739=_0x5f5c97[_0x1acb9e(0x1fc)](_0x285c7d,_0x4c1b36,_0x7b6279);_0x492ef0['innerHTML']=_0x390739;const _0x40c981=_0x492ef0[_0x1acb9e(0x198)];if(_0x40c981){const _0x51e26f=_0x5f5c97[_0x1acb9e(0x1a7)]['split']('|');let _0x551818=0x0;while(!![]){switch(_0x51e26f[_0x551818++]){case'0':_0x40c981[_0x1acb9e(0x213)]['boxSizing']=_0x5f5c97['ZKfJW'];continue;case'1':_0x40c981['style'][_0x1acb9e(0x1b2)]=_0x1acb9e(0x1f2);continue;case'2':_0x40c981[_0x1acb9e(0x213)]['alignItems']=_0x5f5c97[_0x1acb9e(0x211)];continue;case'3':_0x40c981[_0x1acb9e(0x213)]['display']=_0x5f5c97[_0x1acb9e(0x1a0)];continue;case'4':_0x40c981['style'][_0x1acb9e(0x205)]=_0x5f5c97['CTOIL'];continue;case'5':_0x40c981[_0x1acb9e(0x213)]['overflow']=_0x5f5c97[_0x1acb9e(0x1c8)];continue;case'6':_0x40c981[_0x1acb9e(0x213)][_0x1acb9e(0x1d9)]='100%';continue;}break;}}const _0x17c375=_0x492ef0[_0x1acb9e(0x201)]('img');_0x17c375['forEach'](_0xa2d1c2=>{const _0x3c8dbe=_0x1acb9e,_0x4a7855=_0x3c8dbe(0x1de)['split']('|');let _0x40bb68=0x0;while(!![]){switch(_0x4a7855[_0x40bb68++]){case'0':_0xa2d1c2[_0x3c8dbe(0x213)]['objectFit']=_0x5f5c97[_0x3c8dbe(0x207)];continue;case'1':_0xa2d1c2[_0x3c8dbe(0x213)][_0x3c8dbe(0x1af)]=_0x5f5c97[_0x3c8dbe(0x195)];continue;case'2':_0xa2d1c2['style'][_0x3c8dbe(0x1e9)]=_0x5f5c97[_0x3c8dbe(0x1e8)];continue;case'3':_0xa2d1c2[_0x3c8dbe(0x213)][_0x3c8dbe(0x1d9)]=_0x5f5c97[_0x3c8dbe(0x195)];continue;case'4':_0xa2d1c2['style'][_0x3c8dbe(0x18c)]=_0x5f5c97[_0x3c8dbe(0x1f6)];continue;case'5':_0xa2d1c2[_0x3c8dbe(0x213)][_0x3c8dbe(0x1da)]='0';continue;case'6':_0xa2d1c2['style'][_0x3c8dbe(0x1b2)]=_0x5f5c97[_0x3c8dbe(0x195)];continue;case'7':_0xa2d1c2['style'][_0x3c8dbe(0x1ed)]=_0x5f5c97[_0x3c8dbe(0x195)];continue;}break;}});const _0x9e0c50=_0x492ef0['querySelectorAll'](_0x1acb9e(0x1b7));_0x9e0c50['forEach'](_0x39d0bf=>{const _0x49a0b6=_0x1acb9e;_0x39d0bf[_0x49a0b6(0x213)][_0x49a0b6(0x1d9)]=_0x47bf84[_0x49a0b6(0x1b9)],_0x39d0bf['style']['height']=_0x47bf84[_0x49a0b6(0x1b9)],_0x39d0bf[_0x49a0b6(0x213)][_0x49a0b6(0x18c)]=_0x47bf84[_0x49a0b6(0x200)];});return;}let _0x39ed75=_0x4c1b36[_0x1acb9e(0x20b)](_0x5f5c97[_0x1acb9e(0x1b4)]);const _0x476201=Array[_0x1acb9e(0x180)](_0x4c1b36['children'])[_0x1acb9e(0x1e7)](_0x568e7d=>!_0x568e7d['classList'][_0x1acb9e(0x203)](_0x1acb9e(0x1d0)));if(_0x5f5c97[_0x1acb9e(0x1ba)](_0x476201[_0x1acb9e(0x1e1)],0x3))return;let _0x4dc11a;if(_0x5f5c97[_0x1acb9e(0x19b)](_0x4c1b36['dataset'][_0x1acb9e(0x1c7)],undefined))_0x4dc11a=_0x5f5c97[_0x1acb9e(0x212)](parseInt,_0x4c1b36[_0x1acb9e(0x1dd)][_0x1acb9e(0x1c7)],0xa),(_0x5f5c97[_0x1acb9e(0x208)](isNaN,_0x4dc11a)||_0x4dc11a<0x1||_0x5f5c97[_0x1acb9e(0x1c9)](_0x4dc11a,_0x476201[_0x1acb9e(0x1e1)]-0x1))&&(_0x4dc11a=0x1,_0x4c1b36[_0x1acb9e(0x1dd)][_0x1acb9e(0x1c7)]=_0x4dc11a);else{const _0x34d7d2=[];for(let _0x1ca9b0=0x1;_0x5f5c97[_0x1acb9e(0x1bb)](_0x1ca9b0,_0x5f5c97[_0x1acb9e(0x192)](_0x476201[_0x1acb9e(0x1e1)],0x1));_0x1ca9b0++)_0x34d7d2[_0x1acb9e(0x1be)](_0x1ca9b0);_0x4dc11a=_0x34d7d2[Math[_0x1acb9e(0x1f0)](Math[_0x1acb9e(0x1f1)]()*_0x34d7d2['length'])];if(_0x5f5c97['CCBrw'](_0x4dc11a,undefined))return;_0x4c1b36['dataset'][_0x1acb9e(0x1c7)]=_0x4dc11a;}const _0x54bb51=_0x476201[_0x4dc11a],_0x10155b=_0x54bb51[_0x1acb9e(0x1db)](),_0x52a221=_0x10155b[_0x1acb9e(0x1d9)],_0x1f633c=_0x10155b[_0x1acb9e(0x1b2)];if(!_0x39ed75){const _0x182a19=_0x1acb9e(0x20e)[_0x1acb9e(0x1e0)]('|');let _0x437d81=0x0;while(!![]){switch(_0x182a19[_0x437d81++]){case'0':_0x39ed75[_0x1acb9e(0x213)][_0x1acb9e(0x17c)]=_0x5f5c97['ERhhS'](_0x1f633c,'px');continue;case'1':_0x39ed75[_0x1acb9e(0x213)][_0x1acb9e(0x1c4)]=_0x5f5c97[_0x1acb9e(0x211)];continue;case'2':_0x39ed75['style']['height']=_0x5f5c97['CvCIk'](_0x1f633c,'px');continue;case'3':_0x39ed75[_0x1acb9e(0x210)]=_0x5f5c97[_0x1acb9e(0x1c2)];continue;case'4':_0x54bb51[_0x1acb9e(0x1aa)]?_0x4c1b36[_0x1acb9e(0x1d1)](_0x39ed75,_0x54bb51['nextSibling']):_0x4c1b36['appendChild'](_0x39ed75);continue;case'5':_0x39ed75=document['createElement'](_0x5f5c97[_0x1acb9e(0x17d)]);continue;case'6':_0x39ed75[_0x1acb9e(0x213)][_0x1acb9e(0x1d9)]=_0x52a221+'px';continue;case'7':_0x39ed75[_0x1acb9e(0x213)][_0x1acb9e(0x1ef)]=_0x52a221+'px';continue;case'8':_0x39ed75[_0x1acb9e(0x213)]['maxWidth']=_0x52a221+'px';continue;case'9':_0x39ed75[_0x1acb9e(0x213)]['display']=_0x5f5c97['AMHmv'];continue;case'10':_0x39ed75[_0x1acb9e(0x213)][_0x1acb9e(0x1af)]=_0x1f633c+'px';continue;case'11':_0x39ed75[_0x1acb9e(0x213)][_0x1acb9e(0x18f)]=_0x5f5c97['JDljh'];continue;case'12':_0x39ed75[_0x1acb9e(0x213)][_0x1acb9e(0x205)]=_0x5f5c97[_0x1acb9e(0x211)];continue;}break;}}else{const _0x3efe1f=_0x5f5c97[_0x1acb9e(0x1b0)][_0x1acb9e(0x1e0)]('|');let _0x91e6e6=0x0;while(!![]){switch(_0x3efe1f[_0x91e6e6++]){case'0':_0x39ed75[_0x1acb9e(0x213)][_0x1acb9e(0x1ef)]=_0x52a221+'px';continue;case'1':_0x39ed75['style'][_0x1acb9e(0x1af)]=_0x1f633c+'px';continue;case'2':_0x39ed75[_0x1acb9e(0x213)][_0x1acb9e(0x17c)]=_0x1f633c+'px';continue;case'3':_0x39ed75['style'][_0x1acb9e(0x1d9)]=_0x5f5c97[_0x1acb9e(0x1eb)](_0x52a221,'px');continue;case'4':_0x5f5c97[_0x1acb9e(0x19b)](_0x39ed75[_0x1acb9e(0x191)],_0x54bb51)&&(_0x54bb51[_0x1acb9e(0x1aa)]?_0x4c1b36[_0x1acb9e(0x1d1)](_0x39ed75,_0x54bb51[_0x1acb9e(0x1aa)]):_0x4c1b36[_0x1acb9e(0x1a9)](_0x39ed75));continue;case'5':_0x39ed75[_0x1acb9e(0x213)][_0x1acb9e(0x1b2)]=_0x5f5c97['ERhhS'](_0x1f633c,'px');continue;case'6':_0x39ed75[_0x1acb9e(0x213)][_0x1acb9e(0x1ed)]=_0x5f5c97[_0x1acb9e(0x17a)](_0x52a221,'px');continue;}break;}}let _0x176f86=Array[_0x1acb9e(0x180)](_0x4c1b36[_0x1acb9e(0x189)])[_0x1acb9e(0x1e7)](_0x27e9be=>_0x27e9be!==_0x39ed75&&!_0x27e9be['classList']['contains']('ad-send-banner'));if(_0x571d69){const _0x281ee6=_0x4c1b36[_0x1acb9e(0x20b)](_0x571d69);if(_0x281ee6)_0x176f86=[_0x281ee6];}_0x5f5c97[_0x1acb9e(0x1fc)](_0x417165,_0x39ed75,_0x176f86);const _0x51067b=_0x5f5c97[_0x1acb9e(0x20f)](_0x285c7d,_0x4c1b36,_0x7b6279);_0x39ed75['innerHTML']=_0x51067b;const _0x7849ab=_0x39ed75[_0x1acb9e(0x198)];_0x7849ab&&(_0x7849ab['style'][_0x1acb9e(0x1d9)]=_0x5f5c97[_0x1acb9e(0x195)],_0x7849ab[_0x1acb9e(0x213)][_0x1acb9e(0x1b2)]=_0x5f5c97['FyNvb'],_0x7849ab['style'][_0x1acb9e(0x18c)]=_0x5f5c97[_0x1acb9e(0x1a0)],_0x7849ab[_0x1acb9e(0x213)]['alignItems']=_0x5f5c97[_0x1acb9e(0x211)],_0x7849ab[_0x1acb9e(0x213)][_0x1acb9e(0x205)]=_0x5f5c97['CTOIL'],_0x7849ab[_0x1acb9e(0x213)][_0x1acb9e(0x18f)]=_0x5f5c97[_0x1acb9e(0x1c8)],_0x7849ab[_0x1acb9e(0x213)]['boxSizing']=_0x1acb9e(0x1f7));const _0x58e254=_0x39ed75[_0x1acb9e(0x201)](_0x5f5c97[_0x1acb9e(0x1a4)]);_0x58e254[_0x1acb9e(0x21a)](_0x1e7068=>{const _0x20056b=_0x1acb9e,_0x5e652=_0x20056b(0x1c3)[_0x20056b(0x1e0)]('|');let _0x2fd1c4=0x0;while(!![]){switch(_0x5e652[_0x2fd1c4++]){case'0':_0x1e7068[_0x20056b(0x213)][_0x20056b(0x1d9)]=_0x47bf84['eGEcJ'];continue;case'1':_0x1e7068[_0x20056b(0x213)]['objectFit']=_0x47bf84[_0x20056b(0x1bf)];continue;case'2':_0x1e7068[_0x20056b(0x213)][_0x20056b(0x18c)]=_0x47bf84[_0x20056b(0x200)];continue;case'3':_0x1e7068['style'][_0x20056b(0x1af)]=_0x47bf84[_0x20056b(0x1b9)];continue;case'4':_0x1e7068[_0x20056b(0x213)]['margin']='0';continue;case'5':_0x1e7068['style'][_0x20056b(0x1b2)]=_0x47bf84[_0x20056b(0x1b9)];continue;case'6':_0x1e7068[_0x20056b(0x213)][_0x20056b(0x1e9)]=_0x47bf84[_0x20056b(0x1a3)];continue;case'7':_0x1e7068[_0x20056b(0x213)][_0x20056b(0x1ed)]=_0x47bf84[_0x20056b(0x1b9)];continue;}break;}});const _0x206af5=_0x39ed75[_0x1acb9e(0x201)](_0x5f5c97[_0x1acb9e(0x18d)]);_0x206af5[_0x1acb9e(0x21a)](_0x1b2724=>{const _0x295df2=_0x1acb9e;_0x1b2724[_0x295df2(0x213)]['width']=_0x5f5c97[_0x295df2(0x195)],_0x1b2724['style']['height']=_0x5f5c97[_0x295df2(0x195)],_0x1b2724[_0x295df2(0x213)]['display']=_0x5f5c97[_0x295df2(0x1f6)];}),_0x184ac5(_0x39ed75,_0x54bb51);}let _0x5ab81a=[],_0x1643ab=0x0,_0x3cde73=[],_0x388a66=Math[_0xeae0c(0x1f0)](_0x5f5c97[_0xeae0c(0x1b1)](Math[_0xeae0c(0x1f1)](),0x3e8)),_0x571d69=null;async function _0x414cdf(){const _0x414053=_0xeae0c;try{const _0x53649c=_0x5f5c97[_0x414053(0x1ae)](window[_0x414053(0x1b8)][_0x414053(0x1fa)],_0x414053(0x1b6)),_0x4535c5=await _0x5f5c97[_0x414053(0x194)](fetch,_0x53649c);if(!_0x4535c5['ok'])return;const _0x532021=await _0x4535c5['json'](),_0x55e4f8=Array[_0x414053(0x1c6)](_0x532021)?_0x532021['find'](_0x44c142=>_0x44c142[_0x414053(0x1fe)]===_0xd39744):null;if(!_0x55e4f8)return;const _0x18f261=window[_0x414053(0x1b8)][_0x414053(0x1fa)]+window['location'][_0x414053(0x1d2)];if(_0x55e4f8['url']&&!_0x18f261['startsWith'](_0x55e4f8['url']))return;_0x3cde73=Array[_0x414053(0x1c6)](_0x55e4f8['containers'])?_0x55e4f8[_0x414053(0x215)]:[],_0x3cde73['length']&&_0x5f5c97['ipefQ'](typeof _0x3cde73[0x0],_0x5f5c97[_0x414053(0x1a6)])&&_0x3cde73[0x0][_0x414053(0x17f)]&&(_0x3cde73=_0x3cde73[_0x414053(0x1d7)](_0xa597e3=>_0xa597e3['name'])[_0x414053(0x1e7)](Boolean)),_0x5ab81a=(_0x55e4f8['banners']||[])[_0x414053(0x1d7)](_0xbc6ee4=>{const _0x5e6c8f=_0x414053;if(_0xbc6ee4['imageUrl']&&_0xbc6ee4[_0x5e6c8f(0x182)])return'<a\x20href=\x22'+_0xbc6ee4['targetUrl']+_0x5e6c8f(0x20c)+_0xbc6ee4[_0x5e6c8f(0x1ec)]+_0x5e6c8f(0x1c5);else{if(_0xbc6ee4['imageUrl'])return _0x5e6c8f(0x1b5)+_0xbc6ee4['imageUrl']+_0x5e6c8f(0x19a);}return'';})['filter'](Boolean),_0x571d69=_0x55e4f8[_0x414053(0x1f3)]||null,_0x1643ab=0x0,_0x388a66=Math[_0x414053(0x1f0)](_0x5f5c97[_0x414053(0x1b3)](Math[_0x414053(0x1f1)](),0x3e8));}catch(_0x150f2e){console[_0x414053(0x1ce)](_0x5f5c97['AALSF'],_0x150f2e);}}function _0xad09bf(){const _0x355ce8=_0xeae0c,_0x2f148e={'DgmjP':function(_0x4dfc10,_0x3eb9cb,_0x74efae,_0x5ec369){const _0x336ca3=a0_0x4484;return _0x5f5c97[_0x336ca3(0x1e3)](_0x4dfc10,_0x3eb9cb,_0x74efae,_0x5ec369);}};if(!_0x5ab81a[_0x355ce8(0x1e1)])return;if(!_0x3cde73['length']){console[_0x355ce8(0x1ce)](_0x5f5c97[_0x355ce8(0x193)]);return;}let _0x5108a0=[];_0x3cde73[_0x355ce8(0x21a)](_0x3fc857=>{const _0x4bdf4d=_0x355ce8;_0x5108a0=_0x5108a0[_0x4bdf4d(0x218)](Array[_0x4bdf4d(0x180)](document['querySelectorAll'](_0x3fc857)));});if(!_0x5108a0[_0x355ce8(0x1e1)])return;const _0x2b5c2b=_0x5f5c97[_0x355ce8(0x194)](_0x36a698,[..._0x5108a0]);_0x2b5c2b[_0x355ce8(0x21a)](_0x36b6dc=>{_0x2f148e['DgmjP'](_0x6f2ce0,_0x5ab81a,_0x36b6dc,![]);});}const _0xf4396b=document['currentScript'],_0xd39744=_0xf4396b[_0xeae0c(0x188)](_0x5f5c97['dgTNu']);if(!_0xd39744)return;(async function _0xccfaa1(){const _0x129a9c=_0xeae0c,_0x5081ef={'nmAqi':_0x5f5c97[_0x129a9c(0x1ee)]},_0x442c27=_0x5f5c97[_0x129a9c(0x20d)](_0x5bdb57,this,function(){const _0x481cd5=_0x129a9c;return _0x442c27[_0x481cd5(0x1d8)]()[_0x481cd5(0x204)](_0x5081ef[_0x481cd5(0x1fb)])['toString']()[_0x481cd5(0x1ca)](_0x442c27)[_0x481cd5(0x204)](_0x5081ef[_0x481cd5(0x1fb)]);});_0x5f5c97[_0x129a9c(0x17b)](_0x442c27),await _0x5f5c97[_0x129a9c(0x17b)](_0x414cdf);if(!_0x3cde73[_0x129a9c(0x1e1)]){console[_0x129a9c(0x1ce)](_0x5f5c97[_0x129a9c(0x217)]);return;}let _0x1b02b8=[];_0x3cde73['forEach'](_0x745bf1=>{const _0x5717dc=_0x129a9c,_0x1ed254=Array[_0x5717dc(0x180)](document[_0x5717dc(0x201)](_0x745bf1));_0x1b02b8=_0x1b02b8['concat'](_0x1ed254);}),_0x5ab81a['length']&&_0x1b02b8['length']&&(_0x1b02b8=_0x5f5c97['PkYBY'](_0x36a698,_0x1b02b8),_0x1b02b8[_0x129a9c(0x21a)](_0x41d6a2=>{_0x6f2ce0(_0x5ab81a,_0x41d6a2,!![]);})),_0x5f5c97['OypLr'](_0x5ab81a[_0x129a9c(0x1e1)],0x1)&&(setInterval(_0xad09bf,0x2710),setInterval(_0x414cdf,_0x5f5c97['WsEsg'](0x5,0x3c)*0x3e8));}(),function _0x47823f(){const _0x568402=_0xeae0c;if(document[_0x568402(0x19f)](_0x5f5c97[_0x568402(0x1ea)]))return;const _0x297b36=document['createElement'](_0x568402(0x213));_0x297b36['id']=_0x5f5c97['qEPWp'],_0x297b36['textContent']='\x0a\x20\x20\x20\x20.ad-flip-in\x20{\x20animation:\x20adFlipIn\x200.7s\x20cubic-bezier(.4,2,.6,1)\x20both;\x20}\x0a\x20\x20\x20\x20.ad-bounce-in\x20{\x20animation:\x20adBounceIn\x200.7s\x20cubic-bezier(.4,2,.6,1)\x20both;\x20}\x0a\x20\x20\x20\x20.ad-fade-in\x20{\x20animation:\x20adFadeIn\x200.7s\x20cubic-bezier(.4,2,.6,1)\x20both;\x20}\x0a\x20\x20\x20\x20.ad-slide-in\x20{\x20animation:\x20adSlideIn\x200.7s\x20cubic-bezier(.4,2,.6,1)\x20both;\x20}\x0a\x20\x20\x20\x20.ad-img-anim\x20{\x20animation:\x20adImgFadeIn\x200.7s\x20cubic-bezier(.4,2,.6,1)\x20both;\x20}\x0a\x20\x20\x20\x20.ad-send-banner\x20{\x20/*\x20replaces\x20.ad-injected-banner\x20for\x20send\x20ads\x20*/\x20}\x0a\x20\x20\x20\x20@keyframes\x20adFlipIn\x20{\x0a\x20\x20\x20\x20\x20\x200%\x20{\x20transform:\x20rotateY(90deg)\x20scale(0.8);\x20opacity:\x200;\x20}\x0a\x20\x20\x20\x20\x20\x2060%\x20{\x20transform:\x20rotateY(-10deg)\x20scale(1.05);\x20opacity:\x201;\x20}\x0a\x20\x20\x20\x20\x20\x2080%\x20{\x20transform:\x20rotateY(5deg)\x20scale(0.98);\x20}\x0a\x20\x20\x20\x20\x20\x20100%\x20{\x20transform:\x20none;\x20opacity:\x201;\x20}\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20@keyframes\x20adBounceIn\x20{\x0a\x20\x20\x20\x20\x20\x200%\x20{\x20transform:\x20scale(0.5)\x20translateY(60px);\x20opacity:\x200;\x20}\x0a\x20\x20\x20\x20\x20\x2060%\x20{\x20transform:\x20scale(1.1)\x20translateY(-10px);\x20opacity:\x201;\x20}\x0a\x20\x20\x20\x20\x20\x2080%\x20{\x20transform:\x20scale(0.95)\x20translateY(2px);\x20}\x0a\x20\x20\x20\x20\x20\x20100%\x20{\x20transform:\x20none;\x20opacity:\x201;\x20}\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20@keyframes\x20adFadeIn\x20{\x0a\x20\x20\x20\x20\x20\x200%\x20{\x20opacity:\x200;\x20transform:\x20scale(0.95);\x20}\x0a\x20\x20\x20\x20\x20\x20100%\x20{\x20opacity:\x201;\x20transform:\x20none;\x20}\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20@keyframes\x20adSlideIn\x20{\x0a\x20\x20\x20\x20\x20\x200%\x20{\x20opacity:\x200;\x20transform:\x20translateY(40px)\x20scale(0.98);\x20}\x0a\x20\x20\x20\x20\x20\x2080%\x20{\x20opacity:\x201;\x20transform:\x20translateY(-4px)\x20scale(1.01);\x20}\x0a\x20\x20\x20\x20\x20\x20100%\x20{\x20opacity:\x201;\x20transform:\x20none;\x20}\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20@keyframes\x20adImgFadeIn\x20{\x0a\x20\x20\x20\x20\x20\x200%\x20{\x20opacity:\x200;\x20filter:\x20blur(8px);\x20}\x0a\x20\x20\x20\x20\x20\x20100%\x20{\x20opacity:\x201;\x20filter:\x20none;\x20}\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20',document['head'][_0x568402(0x1a9)](_0x297b36);}());}()));function a0_0x1673(){const _0x4bca80=['firstElementChild','center','\x22\x20alt=\x22ad\x22\x20style=\x22max-width:100%;height:auto;display:block;\x22\x20/>','ABkwo','src','fTHtS','-ad','getElementById','AMHmv','add','20HQjKlw','yKeyt','HLJbU','currentScript','yZbjY','klAaW','ad-injector-animations','appendChild','nextSibling','startsWith','xTGuM','innerHTML','RbRnE','maxHeight','rsvNB','WsEsg','height','rUKLe','RQWIi','<img\x20src=\x22','/ad-config.json','iframe','location','eGEcJ','pnYdQ','aznaq','556SanimI','RpmXZ','push','zFSdb','remove','getPropertyPriority','nXbGA','7|3|0|5|1|2|4|6','alignItems','\x22\x20alt=\x22ad\x22\x20style=\x22max-width:100%;height:auto;display:block;\x22\x20/></a>','isArray','adIndex','JDljh','shjQu','constructor','[AdSend]\x20Failed\x20to\x20load\x20ad-config.json:','href','set','error','animationend','ad-send-banner','insertBefore','pathname','offsetWidth','hNuiy','657024dZHznt','getComputedStyle','map','toString','width','margin','getBoundingClientRect','get','dataset','7|1|3|6|0|4|5|2','26050tRplCV','split','length','removeEventListener','ZtwmM','unset','5613sDdrEn','911665ehqqkN','filter','ZKfJW','boxSizing','qEPWp','ERhhS','imageUrl','maxWidth','dmXpR','minWidth','floor','random','100%','copySiblingSelector','shift','17230IomfPJ','RmZmx','border-box','addEventListener','wLVzg','origin','nmAqi','fnNjG','flex','property_id','img','VkRYX','querySelectorAll','ad-bounce-in','contains','search','justifyContent','none','AgZrw','gHZVN','ad-slide-in','6|1|3|2|4|5|0','querySelector','\x22\x20target=\x22_blank\x22\x20rel=\x22noopener\x20noreferrer\x22><img\x20src=\x22','WbxWd','5|3|6|2|9|1|12|11|7|0|8|10|4','oLiuM','className','CTOIL','shYJq','style','5062914byPhpY','containers','getPropertyValue','CvmsQ','concat','OnIpc','forEach','EYbAq','zwswp','minHeight','SKuUZ','TlRYW','name','from','contain','targetUrl','data-property','18tdyJpO','block','setProperty','classList','getAttribute','children','join','2144597OOZIkc','display','uOvLx','GMkFC','overflow','3817gbbQTB','previousSibling','yhhVV','kHaxx','PkYBY','FyNvb','div','[ad-injector]\x20No\x20container\x20selectors\x20found\x20for\x20this\x20page.\x20Please\x20define\x20at\x20least\x20one\x20container/selector.'];a0_0x1673=function(){return _0x4bca80;};return a0_0x1673();}
+/**
+ * AdSend
+ * Author: Difatha
+ * Description: Seamlessly sends and rotates ads into page containers, matching sibling styles and ensuring fair, animated, and visually integrated ad display.
+ *
+ * - Replicates computed styles, classes, and IDs from siblings for seamless appearance
+ * - Animates ad entry with multiple effects
+ * - Ensures fair, round-robin ad rotation
+ * - Dynamically detects API base URL
+ * - Robust error handling and modular structure
+ */
+(function () {
+  // --- Utility Functions ---
+
+  /**
+   * Shuffle an array in place (Fisher-Yates)
+   * @param {Array} array
+   * @returns {Array}
+   */
+  function shuffle(array) {
+    let m = array.length, t, i;
+    while (m) {
+      i = Math.floor(Math.random() * m--);
+      t = array[m];
+      array[m] = array[i];
+      array[i] = t;
+    }
+    return array;
+  }
+
+  /**
+   * Get the current page's full URL
+   * @returns {string}
+   */
+  function getCurrentPageUrl() {
+    return window.location.href;
+  }
+
+  /**
+   * Dynamically detect the API base URL
+   * @returns {string}
+   */
+  function getApiBase() {
+    try {
+      const scriptSrc = document.currentScript && document.currentScript.src;
+      if (scriptSrc) {
+        const url = new URL(scriptSrc, window.location.origin);
+        return url.origin;
+      }
+    } catch {}
+    return window.location.origin;
+  }
+
+  // --- Style Replication & Animation ---
+
+  /**
+   * Replicate computed styles, classes, and ID from a reference sibling
+   * @param {HTMLElement} target
+   * @param {HTMLElement[]} siblings
+   */
+  function replicateSiblingStyles(target, siblings) {
+    if (!siblings.length) return;
+    const ref = Array.from(siblings).find(
+      el => el !== target && window.getComputedStyle(el).display !== "none"
+    );
+    if (!ref) return;
+    const refStyle = window.getComputedStyle(ref);
+    for (let i = 0; i < refStyle.length; i++) {
+      const prop = refStyle[i];
+      target.style.setProperty(prop, refStyle.getPropertyValue(prop), refStyle.getPropertyPriority(prop));
+    }
+    target.className = ref.className
+      .split(' ')
+      .filter(c => c && c !== 'ad-send-banner')
+      .concat(['ad-send-banner'])
+      .join(' ');
+    if (ref.id && ref.id !== target.id) {
+      target.id = ref.id + '-ad';
+    }
+  }
+
+  /**
+   * Animate ad entry and ensure image fit
+   * @param {HTMLElement} adWrapper
+   * @param {HTMLElement} refNode
+   */
+  function animateAdEntry(adWrapper, refNode) {
+    adWrapper.classList.remove('ad-flip-in', 'ad-bounce-in', 'ad-fade-in', 'ad-slide-in');
+    const animations = ['ad-flip-in', 'ad-bounce-in', 'ad-fade-in', 'ad-slide-in'];
+    const anim = animations[Math.floor(Math.random() * animations.length)];
+    void adWrapper.offsetWidth;
+    adWrapper.classList.add(anim);
+    adWrapper.addEventListener('animationend', function handler() {
+      adWrapper.classList.remove(anim);
+      adWrapper.removeEventListener('animationend', handler);
+    });
+    const imgs = adWrapper.querySelectorAll('img');
+    imgs.forEach(img => {
+      img.classList.remove('ad-img-anim');
+      void img.offsetWidth;
+      img.classList.add('ad-img-anim');
+    });
+    // Set wrapper and image height to 100% and match sibling height
+    if (refNode) {
+      const refRect = refNode.getBoundingClientRect();
+      adWrapper.style.height = refRect.height + 'px';
+      adWrapper.style.maxHeight = refRect.height + 'px';
+      adWrapper.style.minHeight = refRect.height + 'px';
+      adWrapper.style.width = '100%';
+      imgs.forEach(img => {
+        img.style.height = '100%';
+        img.style.maxHeight = '100%';
+        img.style.minHeight = '100%';
+      });
+    } else {
+      adWrapper.style.height = '100%';
+      adWrapper.style.maxHeight = '100%';
+      adWrapper.style.minHeight = '100%';
+      adWrapper.style.width = '100%';
+      imgs.forEach(img => {
+        img.style.height = '100%';
+        img.style.maxHeight = '100%';
+        img.style.minHeight = '100%';
+      });
+    }
+  }
+
+  // --- Ad Rotation Logic ---
+
+  const adQueues = new WeakMap();
+  let adRotationQueue = [];
+
+  /**
+   * Get the next ad for a container (per-container queue)
+   * @param {HTMLElement} container
+   * @param {string[]} banners
+   * @returns {string}
+   */
+  function getNextAd(container, banners) {
+    let queue = adQueues.get(container);
+    if (!queue || queue.length === 0) {
+      queue = shuffle([...banners]);
+      adQueues.set(container, queue);
+    }
+    return queue.shift();
+  }
+
+  /**
+   * Get the next ad in a global round-robin queue
+   * @param {string[]} banners
+   * @returns {string}
+   */
+  function getNextAdRoundRobin(banners) {
+    if (!adRotationQueue.length) {
+      adRotationQueue = shuffle([...banners]);
+    }
+    return adRotationQueue.shift();
+  }
+
+  // --- Ad Sending ---
+
+  /**
+   * Send an ad into a container, matching sibling styles and animating entry
+   * @param {string[]} adHtmlArr
+   * @param {HTMLElement} container
+   * @param {boolean} isFirstLoad
+   */
+  function sendAd(adHtmlArr, container, isFirstLoad) {
+    // Preset slot: send directly
+    if (container.classList.contains('ad-send-banner') || container.id?.startsWith('banner-slot-')) {
+      let adWrapper = container.querySelector('.ad-send-banner');
+      if (!adWrapper) {
+        adWrapper = document.createElement('div');
+        adWrapper.className = 'ad-send-banner';
+        adWrapper.style.width = '100%';
+        adWrapper.style.height = '100%';
+        adWrapper.style.display = 'flex';
+        adWrapper.style.alignItems = 'center';
+        adWrapper.style.justifyContent = 'center';
+        adWrapper.style.overflow = 'hidden';
+        adWrapper.style.minHeight = 'unset';
+        adWrapper.style.maxHeight = 'unset';
+        adWrapper.style.boxSizing = 'border-box';
+        container.innerHTML = '';
+        container.appendChild(adWrapper);
+      }
+      const slotRect = container.getBoundingClientRect();
+      adWrapper.style.height = slotRect.height + 'px';
+      adWrapper.style.maxHeight = slotRect.height + 'px';
+      adWrapper.style.minHeight = slotRect.height + 'px';
+      adWrapper.style.width = '100%';
+      const adHtml = getNextAd(container, adHtmlArr);
+      adWrapper.innerHTML = adHtml;
+      const adContent = adWrapper.firstElementChild;
+      if (adContent) {
+        adContent.style.width = '100%';
+        adContent.style.height = '100%';
+        adContent.style.display = 'flex';
+        adContent.style.alignItems = 'center';
+        adContent.style.justifyContent = 'center';
+        adContent.style.overflow = 'hidden';
+        adContent.style.boxSizing = 'border-box';
+      }
+      const imgs = adWrapper.querySelectorAll('img');
+      imgs.forEach(img => {
+        img.style.maxWidth = '100%';
+        img.style.maxHeight = '100%';
+        img.style.width = '100%';
+        img.style.height = '100%';
+        img.style.objectFit = 'contain';
+        img.style.display = 'block';
+        img.style.margin = '0';
+        img.style.boxSizing = 'border-box';
+      });
+      const iframes = adWrapper.querySelectorAll('iframe');
+      iframes.forEach(iframe => {
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.display = 'block';
+      });
+      return;
+    }
+    // Find children to determine insertion point
+    let adWrapper = container.querySelector('.ad-send-banner');
+    const children = Array.from(container.children).filter(
+      (el) => !el.classList.contains('ad-send-banner')
+    );
+    if (children.length < 3) return;
+    let idx;
+    if (container.dataset.adIndex !== undefined) {
+      idx = parseInt(container.dataset.adIndex, 10);
+      if (isNaN(idx) || idx < 1 || idx >= children.length - 1) {
+        idx = 1;
+        container.dataset.adIndex = idx;
+      }
+    } else {
+      const validIndexes = [];
+      for (let i = 1; i < children.length - 1; i++) validIndexes.push(i);
+      idx = validIndexes[Math.floor(Math.random() * validIndexes.length)];
+      if (idx === undefined) return;
+      container.dataset.adIndex = idx;
+    }
+    const refNode = children[idx];
+    const refRect = refNode.getBoundingClientRect();
+    const width = refRect.width;
+    const height = refRect.height;
+    if (!adWrapper) {
+      adWrapper = document.createElement('div');
+      adWrapper.className = 'ad-send-banner';
+      adWrapper.style.width = width + 'px';
+      adWrapper.style.height = height + 'px';
+      adWrapper.style.display = 'flex';
+      adWrapper.style.alignItems = 'center';
+      adWrapper.style.justifyContent = 'center';
+      adWrapper.style.overflow = 'hidden';
+      adWrapper.style.minWidth = width + 'px';
+      adWrapper.style.minHeight = height + 'px';
+      adWrapper.style.maxWidth = width + 'px';
+      adWrapper.style.maxHeight = height + 'px';
+      if (refNode.nextSibling) {
+        container.insertBefore(adWrapper, refNode.nextSibling);
+      } else {
+        container.appendChild(adWrapper);
+      }
+    } else {
+      if (adWrapper.previousSibling !== refNode) {
+        if (refNode.nextSibling) {
+          container.insertBefore(adWrapper, refNode.nextSibling);
+        } else {
+          container.appendChild(adWrapper);
+        }
+      }
+      adWrapper.style.width = width + 'px';
+      adWrapper.style.height = height + 'px';
+      adWrapper.style.minWidth = width + 'px';
+      adWrapper.style.minHeight = height + 'px';
+      adWrapper.style.maxWidth = width + 'px';
+      adWrapper.style.maxHeight = height + 'px';
+    }
+    // --- Enhanced: Copy sibling element tags and styles up to selector ---
+    let siblings = Array.from(container.children).filter(
+      el => el !== adWrapper && !el.classList.contains('ad-send-banner')
+    );
+    let adHtml = getNextAd(container, adHtmlArr);
+    if (copySiblingSelector) {
+      // Find the closest matching sibling (not inside adWrapper)
+      let customRef = container.querySelector(copySiblingSelector);
+      if (customRef) {
+        // Clone the tag and all computed styles
+        const clone = customRef.cloneNode(false); // shallow clone
+        const refStyle = window.getComputedStyle(customRef);
+        for (let i = 0; i < refStyle.length; i++) {
+          const prop = refStyle[i];
+          clone.style.setProperty(prop, refStyle.getPropertyValue(prop), refStyle.getPropertyPriority(prop));
+        }
+        // Wrap the ad in the same tag as the sibling, with all classes/attributes
+        clone.className = customRef.className;
+        clone.id = customRef.id ? customRef.id + '-ad' : '';
+        // Place the ad HTML inside the clone, wrapped in <a> if targetUrl is present
+        // Extract imageUrl and targetUrl from the adHtmlArr (since we build adHtmlArr from config)
+        let bannerObj = (banners && banners.length) ? (config.banners || []).find(b => adHtml.includes(b.imageUrl)) : null;
+        if (bannerObj && bannerObj.targetUrl) {
+          clone.innerHTML = `<a href="${bannerObj.targetUrl}" target="_blank" rel="noopener noreferrer">${adHtml}</a>`;
+        } else {
+          clone.innerHTML = adHtml;
+        }
+        adWrapper.innerHTML = '';
+        adWrapper.appendChild(clone);
+        siblings = [customRef];
+      }
+    } else {
+      // Default: replicate styles from siblings as before
+      replicateSiblingStyles(adWrapper, siblings);
+      adWrapper.innerHTML = adHtml;
+    }
+    // ...existing code for images/iframes/animation...
+    const adContent = adWrapper.firstElementChild;
+    if (adContent) {
+      adContent.style.width = '100%';
+      adContent.style.height = '100%';
+      adContent.style.display = 'flex';
+      adContent.style.alignItems = 'center';
+      adContent.style.justifyContent = 'center';
+      adContent.style.overflow = 'hidden';
+      adContent.style.boxSizing = 'border-box';
+    }
+    const imgs = adWrapper.querySelectorAll('img');
+    imgs.forEach(img => {
+      img.style.maxWidth = '100%';
+      img.style.maxHeight = '100%';
+      img.style.width = '100%';
+      img.style.height = '100%';
+      img.style.objectFit = 'contain';
+      img.style.display = 'block';
+      img.style.margin = '0';
+      img.style.boxSizing = 'border-box';
+    });
+    const iframes = adWrapper.querySelectorAll('iframe');
+    iframes.forEach(iframe => {
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.style.display = 'block';
+    });
+    animateAdEntry(adWrapper, refNode);
+  }
+
+  // --- Banner Fetching & Rotation ---
+
+  let banners = [];
+  let bannerIndex = 0;
+  let containerSelectors = [];
+  let rotationOffset = Math.floor(Math.random() * 1000);
+
+  /**
+   * Fetch all banners and container selectors for the current page from ad-config.json
+   * Also loads copySiblingSelector for style replication.
+   */
+  let copySiblingSelector = null;
+  async function fetchAllBannersFromFile() {
+    try {
+      const configUrl = 'https://cdn.jsdelivr.net/gh/Verinice/adsend@d94bb5e3586c3686a74aefe378a7106cac70a599/public/ad-config.json';
+      const res = await fetch(configUrl);
+      if (!res.ok) return;
+      const configs = await res.json();
+      // Find the property config by propertyId
+      const config = Array.isArray(configs)
+        ? configs.find(cfg => cfg.property_id === propertyId)
+        : null;
+      if (!config) return;
+      // Match by current page URL (ignoring query/hash)
+      const pageUrl = window.location.origin + window.location.pathname;
+      if (config.url && !pageUrl.startsWith(config.url)) return;
+      containerSelectors = Array.isArray(config.containers) ? config.containers : [];
+      if (containerSelectors.length && typeof containerSelectors[0] === 'object' && containerSelectors[0].name) {
+        containerSelectors = containerSelectors.map(c => c.name).filter(Boolean);
+      }
+      banners = (config.banners || []).map(b => {
+        if (b.imageUrl && b.targetUrl) {
+          return `<a href="${b.targetUrl}" target="_blank" rel="noopener noreferrer"><img src="${b.imageUrl}" alt="ad" style="max-width:100%;height:auto;display:block;" /></a>`;
+        } else if (b.imageUrl) {
+          return `<img src="${b.imageUrl}" alt="ad" style="max-width:100%;height:auto;display:block;" />`;
+        }
+        return '';
+      }).filter(Boolean);
+      copySiblingSelector = config.copySiblingSelector || null;
+      bannerIndex = 0;
+      rotationOffset = Math.floor(Math.random() * 1000);
+    } catch (e) {
+      console.error('[AdSend] Failed to load ad-config.json:', e);
+    }
+  }
+
+  /**
+   * Rotate ads in all slots (fair, round-robin)
+   */
+  function rotateAdSlots() {
+    if (!banners.length) return;
+    if (!containerSelectors.length) {
+      console.error('[ad-injector] No container selectors found for this page. Please define at least one container/selector.');
+      return;
+    }
+    let allContainers = [];
+    containerSelectors.forEach(selector => {
+      allContainers = allContainers.concat(Array.from(document.querySelectorAll(selector)));
+    });
+    if (!allContainers.length) return;
+    const shuffledContainers = shuffle([...allContainers]);
+    shuffledContainers.forEach((container) => {
+      sendAd(banners, container, false);
+    });
+  }
+
+  // --- Initialization ---
+
+  const script = document.currentScript;
+  const propertyId = script.getAttribute("data-property");
+  if (!propertyId) return;
+
+  (async function initAdInjector() {
+    await fetchAllBannersFromFile();
+    if (!containerSelectors.length) {
+      console.error('[AdSend] No container selectors found for this page. Please define at least one container/selector in ad-config.json.');
+      return;
+    }
+    let allContainers = [];
+    containerSelectors.forEach(selector => {
+      const containers = Array.from(document.querySelectorAll(selector));
+      allContainers = allContainers.concat(containers);
+    });
+    if (banners.length && allContainers.length) {
+      allContainers = shuffle(allContainers);
+      allContainers.forEach((el) => {
+        sendAd(banners, el, true);
+      });
+    }
+    if (banners.length > 1) {
+      setInterval(rotateAdSlots, 10000);
+      setInterval(fetchAllBannersFromFile, 5 * 60 * 1000);
+    }
+  })();
+
+  // --- Animation CSS Injection ---
+
+  (function addAdAnimations(){
+    if (document.getElementById('ad-injector-animations')) return;
+    const style = document.createElement('style');
+    style.id = 'ad-injector-animations';
+    style.textContent = `
+    .ad-flip-in { animation: adFlipIn 0.7s cubic-bezier(.4,2,.6,1) both; }
+    .ad-bounce-in { animation: adBounceIn 0.7s cubic-bezier(.4,2,.6,1) both; }
+    .ad-fade-in { animation: adFadeIn 0.7s cubic-bezier(.4,2,.6,1) both; }
+    .ad-slide-in { animation: adSlideIn 0.7s cubic-bezier(.4,2,.6,1) both; }
+    .ad-img-anim { animation: adImgFadeIn 0.7s cubic-bezier(.4,2,.6,1) both; }
+    .ad-send-banner { /* replaces .ad-injected-banner for send ads */ }
+    @keyframes adFlipIn {
+      0% { transform: rotateY(90deg) scale(0.8); opacity: 0; }
+      60% { transform: rotateY(-10deg) scale(1.05); opacity: 1; }
+      80% { transform: rotateY(5deg) scale(0.98); }
+      100% { transform: none; opacity: 1; }
+    }
+    @keyframes adBounceIn {
+      0% { transform: scale(0.5) translateY(60px); opacity: 0; }
+      60% { transform: scale(1.1) translateY(-10px); opacity: 1; }
+      80% { transform: scale(0.95) translateY(2px); }
+      100% { transform: none; opacity: 1; }
+    }
+    @keyframes adFadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: none; }
+    }
+    @keyframes adSlideIn {
+      0% { opacity: 0; transform: translateY(40px) scale(0.98); }
+      80% { opacity: 1; transform: translateY(-4px) scale(1.01); }
+      100% { opacity: 1; transform: none; }
+    }
+    @keyframes adImgFadeIn {
+      0% { opacity: 0; filter: blur(8px); }
+      100% { opacity: 1; filter: none; }
+    }
+    `;
+    document.head.appendChild(style);
+  })();
+})();

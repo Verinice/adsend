@@ -5,7 +5,7 @@
         "name": "nhentai.com",
         "url": "https://nhentai.com/en/tag/big-breasts",
         "containers": [".container div .row"],
-        "copySiblingSelector": ".comic .box",
+        "copySiblingSelector": ".comic.box",
         "banners": [
             {
                 "id": "1",
