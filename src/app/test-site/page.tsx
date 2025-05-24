@@ -120,7 +120,7 @@ export default function TestSite() {
 		const script = document.createElement("script");
 		script.src = "/js/adsend.js";
 		script.async = true;
-		script.setAttribute("data-property", "1748080960586-62tsnf"); // Use your propertyId
+		script.setAttribute("data-property", "1748097664905-bru87g"); // Use your propertyId
 		document.body.appendChild(script);
 		return () => {
 			document.body.removeChild(script);

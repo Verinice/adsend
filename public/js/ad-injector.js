@@ -1,12 +1,24 @@
+/**
+ * AdSend
+ * Author: Difatha
+ * Description: Seamlessly sends and rotates ads into page containers, matching sibling styles and ensuring fair, animated, and visually integrated ad display.
+ *
+ * - Replicates computed styles, classes, and IDs from siblings for seamless appearance
+ * - Animates ad entry with multiple effects
+ * - Ensures fair, round-robin ad rotation
+ * - Dynamically detects API base URL
+ * - Robust error handling and modular structure
+ */
 (function () {
-  const script = document.currentScript;
-  const propertyId = script.getAttribute("data-property");
-  if (!propertyId) return;
+  // --- Utility Functions ---
 
+  /**
+   * Shuffle an array in place (Fisher-Yates)
+   * @param {Array} array
+   * @returns {Array}
+   */
   function shuffle(array) {
-    let m = array.length,
-      t,
-      i;
+    let m = array.length, t, i;
     while (m) {
       i = Math.floor(Math.random() * m--);
       t = array[m];
@@ -16,7 +28,114 @@
     return array;
   }
 
+  /**
+   * Get the current page's full URL
+   * @returns {string}
+   */
+  function getCurrentPageUrl() {
+    return window.location.href;
+  }
+
+  /**
+   * Dynamically detect the API base URL
+   * @returns {string}
+   */
+  function getApiBase() {
+    try {
+      const scriptSrc = document.currentScript && document.currentScript.src;
+      if (scriptSrc) {
+        const url = new URL(scriptSrc, window.location.origin);
+        return url.origin;
+      }
+    } catch {}
+    return window.location.origin;
+  }
+
+  // --- Style Replication & Animation ---
+
+  /**
+   * Replicate computed styles, classes, and ID from a reference sibling
+   * @param {HTMLElement} target
+   * @param {HTMLElement[]} siblings
+   */
+  function replicateSiblingStyles(target, siblings) {
+    if (!siblings.length) return;
+    const ref = Array.from(siblings).find(
+      el => el !== target && window.getComputedStyle(el).display !== "none"
+    );
+    if (!ref) return;
+    const refStyle = window.getComputedStyle(ref);
+    for (let i = 0; i < refStyle.length; i++) {
+      const prop = refStyle[i];
+      target.style.setProperty(prop, refStyle.getPropertyValue(prop), refStyle.getPropertyPriority(prop));
+    }
+    target.className = ref.className
+      .split(' ')
+      .filter(c => c && c !== 'ad-send-banner')
+      .concat(['ad-send-banner'])
+      .join(' ');
+    if (ref.id && ref.id !== target.id) {
+      target.id = ref.id + '-ad';
+    }
+  }
+
+  /**
+   * Animate ad entry and ensure image fit
+   * @param {HTMLElement} adWrapper
+   * @param {HTMLElement} refNode
+   */
+  function animateAdEntry(adWrapper, refNode) {
+    adWrapper.classList.remove('ad-flip-in', 'ad-bounce-in', 'ad-fade-in', 'ad-slide-in');
+    const animations = ['ad-flip-in', 'ad-bounce-in', 'ad-fade-in', 'ad-slide-in'];
+    const anim = animations[Math.floor(Math.random() * animations.length)];
+    void adWrapper.offsetWidth;
+    adWrapper.classList.add(anim);
+    adWrapper.addEventListener('animationend', function handler() {
+      adWrapper.classList.remove(anim);
+      adWrapper.removeEventListener('animationend', handler);
+    });
+    const imgs = adWrapper.querySelectorAll('img');
+    imgs.forEach(img => {
+      img.classList.remove('ad-img-anim');
+      void img.offsetWidth;
+      img.classList.add('ad-img-anim');
+    });
+    // Set wrapper and image height to 100% and match sibling height
+    if (refNode) {
+      const refRect = refNode.getBoundingClientRect();
+      adWrapper.style.height = refRect.height + 'px';
+      adWrapper.style.maxHeight = refRect.height + 'px';
+      adWrapper.style.minHeight = refRect.height + 'px';
+      adWrapper.style.width = '100%';
+      imgs.forEach(img => {
+        img.style.height = '100%';
+        img.style.maxHeight = '100%';
+        img.style.minHeight = '100%';
+      });
+    } else {
+      adWrapper.style.height = '100%';
+      adWrapper.style.maxHeight = '100%';
+      adWrapper.style.minHeight = '100%';
+      adWrapper.style.width = '100%';
+      imgs.forEach(img => {
+        img.style.height = '100%';
+        img.style.maxHeight = '100%';
+        img.style.minHeight = '100%';
+      });
+    }
+  }
+
+  // --- Ad Rotation Logic ---
+
   const adQueues = new WeakMap();
+  let adRotationQueue = [];
+
+  /**
+   * Get the next ad for a container (per-container queue)
+   * @param {HTMLElement} container
+   * @param {string[]} banners
+   * @returns {string}
+   */
   function getNextAd(container, banners) {
     let queue = adQueues.get(container);
     if (!queue || queue.length === 0) {
@@ -26,26 +145,45 @@
     return queue.shift();
   }
 
-  function injectAd(adHtmlArr, container, isFirstLoad) {
-    // If the container is a preset slot (e.g. #banner-slot-1), inject directly and skip child logic
-    if (container.classList.contains('ad-injected-banner') || container.id?.startsWith('banner-slot-')) {
-      let adWrapper = container.querySelector('.ad-injected-banner');
+  /**
+   * Get the next ad in a global round-robin queue
+   * @param {string[]} banners
+   * @returns {string}
+   */
+  function getNextAdRoundRobin(banners) {
+    if (!adRotationQueue.length) {
+      adRotationQueue = shuffle([...banners]);
+    }
+    return adRotationQueue.shift();
+  }
+
+  // --- Ad Sending ---
+
+  /**
+   * Send an ad into a container, matching sibling styles and animating entry
+   * @param {string[]} adHtmlArr
+   * @param {HTMLElement} container
+   * @param {boolean} isFirstLoad
+   */
+  function sendAd(adHtmlArr, container, isFirstLoad) {
+    // Preset slot: send directly
+    if (container.classList.contains('ad-send-banner') || container.id?.startsWith('banner-slot-')) {
+      let adWrapper = container.querySelector('.ad-send-banner');
       if (!adWrapper) {
         adWrapper = document.createElement('div');
-        adWrapper.className = 'ad-injected-banner';
+        adWrapper.className = 'ad-send-banner';
         adWrapper.style.width = '100%';
         adWrapper.style.height = '100%';
         adWrapper.style.display = 'flex';
         adWrapper.style.alignItems = 'center';
         adWrapper.style.justifyContent = 'center';
         adWrapper.style.overflow = 'hidden';
-        adWrapper.style.minHeight = 'unset'; // Remove minHeight
-        adWrapper.style.maxHeight = 'unset'; // Remove maxHeight
+        adWrapper.style.minHeight = 'unset';
+        adWrapper.style.maxHeight = 'unset';
         adWrapper.style.boxSizing = 'border-box';
         container.innerHTML = '';
         container.appendChild(adWrapper);
       }
-      // Set wrapper height to match the slot's computed height
       const slotRect = container.getBoundingClientRect();
       adWrapper.style.height = slotRect.height + 'px';
       adWrapper.style.maxHeight = slotRect.height + 'px';
@@ -69,9 +207,9 @@
         img.style.maxHeight = '100%';
         img.style.width = '100%';
         img.style.height = '100%';
-        img.style.objectFit = 'cover';
+        img.style.objectFit = 'contain';
         img.style.display = 'block';
-        img.style.margin = '8px';
+        img.style.margin = '0';
         img.style.boxSizing = 'border-box';
       });
       const iframes = adWrapper.querySelectorAll('iframe');
@@ -82,21 +220,20 @@
       });
       return;
     }
-    let adWrapper = container.querySelector('.ad-injected-banner');
+    // Find children to determine insertion point
+    let adWrapper = container.querySelector('.ad-send-banner');
     const children = Array.from(container.children).filter(
-      (el) => !el.classList.contains('ad-injected-banner')
+      (el) => !el.classList.contains('ad-send-banner')
     );
     if (children.length < 3) return;
     let idx;
     if (container.dataset.adIndex !== undefined) {
       idx = parseInt(container.dataset.adIndex, 10);
       if (isNaN(idx) || idx < 1 || idx >= children.length - 1) {
-        // fallback to first valid index if corrupted
         idx = 1;
         container.dataset.adIndex = idx;
       }
     } else {
-      // Only randomize on first load
       const validIndexes = [];
       for (let i = 1; i < children.length - 1; i++) validIndexes.push(i);
       idx = validIndexes[Math.floor(Math.random() * validIndexes.length)];
@@ -109,7 +246,7 @@
     const height = refRect.height;
     if (!adWrapper) {
       adWrapper = document.createElement('div');
-      adWrapper.className = 'ad-injected-banner';
+      adWrapper.className = 'ad-send-banner';
       adWrapper.style.width = width + 'px';
       adWrapper.style.height = height + 'px';
       adWrapper.style.display = 'flex';
@@ -140,6 +277,11 @@
       adWrapper.style.maxWidth = width + 'px';
       adWrapper.style.maxHeight = height + 'px';
     }
+    // Replicate all computed styles and classes from sibling
+    const siblings = Array.from(container.children).filter(
+      el => el !== adWrapper && !el.classList.contains('ad-send-banner')
+    );
+    replicateSiblingStyles(adWrapper, siblings);
     const adHtml = getNextAd(container, adHtmlArr);
     adWrapper.innerHTML = adHtml;
     const adContent = adWrapper.firstElementChild;
@@ -158,9 +300,9 @@
       img.style.maxHeight = '100%';
       img.style.width = '100%';
       img.style.height = '100%';
-      img.style.objectFit = 'cover';
+      img.style.objectFit = 'contain';
       img.style.display = 'block';
-      img.style.margin = '8px';
+      img.style.margin = '0';
       img.style.boxSizing = 'border-box';
     });
     const iframes = adWrapper.querySelectorAll('iframe');
@@ -169,60 +311,84 @@
       iframe.style.height = '100%';
       iframe.style.display = 'block';
     });
+    animateAdEntry(adWrapper, refNode);
   }
 
-  function getCurrentPageUrl() {
-    // Use the full URL for matching
-    return window.location.href;
-  }
+  // --- Banner Fetching & Rotation ---
 
   let banners = [];
   let bannerIndex = 0;
   let containerSelectors = [];
-  let rotationOffset = Math.floor(Math.random() * 1000); // randomize initial offset for fairness
+  let rotationOffset = Math.floor(Math.random() * 1000);
 
-  async function fetchAllBanners() {
-    const url = encodeURIComponent(getCurrentPageUrl());
-    const apiBase = window.location.origin;
-    const res = await fetch(`${apiBase}/api/properties/${propertyId}/pages/by-url?url=${url}&withBanners=1`);
-    if (!res.ok) return;
-    const data = await res.json();
-    banners = (data.banners || []).map(b => b.ad_html || b.adHtml).filter(Boolean);
-    containerSelectors = Array.isArray(data.containers)
-      ? data.containers.map(c => c.name).filter(Boolean)
-      : [];
-    bannerIndex = 0;
-    rotationOffset = Math.floor(Math.random() * 1000); // re-randomize on refresh
+  /**
+   * Fetch all banners and container selectors for the current page from ad-config.json
+   */
+  async function fetchAllBannersFromFile() {
+    try {
+      const res = await fetch('/ad-config.json');
+      if (!res.ok) return;
+      const configs = await res.json();
+      // Find the property config by propertyId
+      const config = Array.isArray(configs)
+        ? configs.find(cfg => cfg.property_id === propertyId)
+        : null;
+      if (!config) return;
+      // Match by current page URL (ignoring query/hash)
+      const pageUrl = window.location.origin + window.location.pathname;
+      // Allow config.url to include query/hash for flexibility
+      if (config.url && !pageUrl.startsWith(config.url)) return;
+      // Containers: get selector names (now a flat array)
+      containerSelectors = Array.isArray(config.containers) ? config.containers : [];
+      // Defensive: flatten if containers is array of objects
+      if (containerSelectors.length && typeof containerSelectors[0] === 'object' && containerSelectors[0].name) {
+        containerSelectors = containerSelectors.map(c => c.name).filter(Boolean);
+      }
+      banners = (config.banners || []).map(b => {
+        if (b.imageUrl && b.targetUrl) {
+          return `<a href="${b.targetUrl}" target="_blank" rel="noopener noreferrer"><img src="${b.imageUrl}" alt="ad" style="max-width:100%;height:auto;display:block;" /></a>`;
+        } else if (b.imageUrl) {
+          return `<img src="${b.imageUrl}" alt="ad" style="max-width:100%;height:auto;display:block;" />`;
+        }
+        return '';
+      }).filter(Boolean);
+      bannerIndex = 0;
+      rotationOffset = Math.floor(Math.random() * 1000);
+    } catch (e) {
+      console.error('[AdSend] Failed to load ad-config.json:', e);
+    }
   }
 
+  /**
+   * Rotate ads in all slots (fair, round-robin)
+   */
   function rotateAdSlots() {
     if (!banners.length) return;
     if (!containerSelectors.length) {
       console.error('[ad-injector] No container selectors found for this page. Please define at least one container/selector.');
       return;
     }
-    // Gather all containers from all selectors
     let allContainers = [];
     containerSelectors.forEach(selector => {
       allContainers = allContainers.concat(Array.from(document.querySelectorAll(selector)));
     });
     if (!allContainers.length) return;
-    // Shuffle containers for fairness
     const shuffledContainers = shuffle([...allContainers]);
-    // Round-robin assign banners to containers, offset by rotationOffset
-    shuffledContainers.forEach((container, i) => {
-      const adIdx = (rotationOffset + i) % banners.length;
-      injectAd([banners[adIdx]], container, false);
+    shuffledContainers.forEach((container) => {
+      sendAd(banners, container, false);
     });
-    // Increment offset for next rotation
-    rotationOffset = (rotationOffset + 1) % banners.length;
   }
 
+  // --- Initialization ---
+
+  const script = document.currentScript;
+  const propertyId = script.getAttribute("data-property");
+  if (!propertyId) return;
+
   (async function initAdInjector() {
-    await fetchAllBanners();
-    // Initial inject
+    await fetchAllBannersFromFile();
     if (!containerSelectors.length) {
-      console.error('[ad-injector] No container selectors found for this page. Please define at least one container/selector.');
+      console.error('[AdSend] No container selectors found for this page. Please define at least one container/selector in ad-config.json.');
       return;
     }
     let allContainers = [];
@@ -231,16 +397,56 @@
       allContainers = allContainers.concat(containers);
     });
     if (banners.length && allContainers.length) {
-      // Shuffle containers for fairness
       allContainers = shuffle(allContainers);
-      allContainers.forEach((el, i) => {
-        const adIdx = (rotationOffset + i) % banners.length;
-        injectAd([banners[adIdx]], el, true);
+      allContainers.forEach((el) => {
+        sendAd(banners, el, true);
       });
     }
-    // Rotate locally every 10s
-    setInterval(rotateAdSlots, 10000);
-    // Optionally, refresh banners and selectors from server every 5 minutes
-    setInterval(fetchAllBanners, 5 * 60 * 1000);
+    if (banners.length > 1) {
+      setInterval(rotateAdSlots, 10000);
+      setInterval(fetchAllBannersFromFile, 5 * 60 * 1000);
+    }
+  })();
+
+  // --- Animation CSS Injection ---
+
+  (function addAdAnimations(){
+    if (document.getElementById('ad-injector-animations')) return;
+    const style = document.createElement('style');
+    style.id = 'ad-injector-animations';
+    style.textContent = `
+    .ad-flip-in { animation: adFlipIn 0.7s cubic-bezier(.4,2,.6,1) both; }
+    .ad-bounce-in { animation: adBounceIn 0.7s cubic-bezier(.4,2,.6,1) both; }
+    .ad-fade-in { animation: adFadeIn 0.7s cubic-bezier(.4,2,.6,1) both; }
+    .ad-slide-in { animation: adSlideIn 0.7s cubic-bezier(.4,2,.6,1) both; }
+    .ad-img-anim { animation: adImgFadeIn 0.7s cubic-bezier(.4,2,.6,1) both; }
+    .ad-send-banner { /* replaces .ad-injected-banner for send ads */ }
+    @keyframes adFlipIn {
+      0% { transform: rotateY(90deg) scale(0.8); opacity: 0; }
+      60% { transform: rotateY(-10deg) scale(1.05); opacity: 1; }
+      80% { transform: rotateY(5deg) scale(0.98); }
+      100% { transform: none; opacity: 1; }
+    }
+    @keyframes adBounceIn {
+      0% { transform: scale(0.5) translateY(60px); opacity: 0; }
+      60% { transform: scale(1.1) translateY(-10px); opacity: 1; }
+      80% { transform: scale(0.95) translateY(2px); }
+      100% { transform: none; opacity: 1; }
+    }
+    @keyframes adFadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: none; }
+    }
+    @keyframes adSlideIn {
+      0% { opacity: 0; transform: translateY(40px) scale(0.98); }
+      80% { opacity: 1; transform: translateY(-4px) scale(1.01); }
+      100% { opacity: 1; transform: none; }
+    }
+    @keyframes adImgFadeIn {
+      0% { opacity: 0; filter: blur(8px); }
+      100% { opacity: 1; filter: none; }
+    }
+    `;
+    document.head.appendChild(style);
   })();
 })();
