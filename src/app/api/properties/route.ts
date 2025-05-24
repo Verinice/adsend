@@ -2,6 +2,9 @@ import { NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
 const mysql = require("mysql2/promise");
+import { v2 as cloudinary } from "cloudinary";
+
+cloudinary.config();
 
 async function getConnection() {
   return await mysql.createConnection({
@@ -22,12 +25,11 @@ export async function POST(req: Request) {
   if (existing.length === 0) {
     await conn.query("INSERT INTO properties (id, name) VALUES (?, ?)", [id, name]);
     await conn.end();
-    // Create uploads directory for this property (async/await)
-    const uploadDir = path.join(process.cwd(), "public", "uploads", id);
+    // Create Cloudinary folder for this property
     try {
-      await fs.mkdir(uploadDir, { recursive: true });
+      await cloudinary.api.create_folder(`adsend/${id}`);
     } catch (e) {
-      // If directory creation fails, still return success for property creation
+      // Ignore Cloudinary errors, do not block property creation
     }
     return NextResponse.json({ success: true });
   } else {
@@ -53,6 +55,19 @@ export async function DELETE(req: Request, context: { params: { id: string } }) 
       await fs.rm(uploadDir, { recursive: true, force: true });
     } catch (e) {
       // Ignore if directory does not exist or cannot be deleted
+    }
+    // Remove Cloudinary folder for this property and all its contents
+    try {
+      // List all resources in the folder
+      const resources = await cloudinary.api.resources({ type: 'upload', prefix: `adsend/${propertyId}/` });
+      if (resources.resources && resources.resources.length > 0) {
+        // Delete all resources in the folder
+        await cloudinary.api.delete_resources(resources.resources.map((r: any) => r.public_id));
+      }
+      // Delete the folder itself
+      await cloudinary.api.delete_folder(`adsend/${propertyId}`);
+    } catch (e) {
+      // Ignore Cloudinary errors, do not block property deletion
     }
     return NextResponse.json({ success: true });
   } catch (err: unknown) {

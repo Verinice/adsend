@@ -99,12 +99,7 @@ export default function Properties() {
 
   // Helper to always generate adHtml using imageUrl
   function getBannerAdHtml(banner: any) {
-    let imgUrl = banner.imageUrl || '';
-    // Ensure imgUrl starts with /uploads/
-    if (imgUrl && !imgUrl.startsWith('/uploads/')) {
-      imgUrl = '/uploads/' + imgUrl.replace(/^.*[\\/]/, '');
-    }
-    // Use style to ensure image fits parent, no overflow or cut off
+    const imgUrl = banner.imageUrl || '';
     return `<a href="#" target="_blank" rel="noopener noreferrer"><img src="${imgUrl}" alt="${banner.name || ''}" style="display:block;max-width:100%;max-height:100%;width:100%;height:auto;object-fit:contain;box-sizing:border-box;" /></a>`;
   }
 
