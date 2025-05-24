@@ -358,7 +358,7 @@
   let copySiblingSelector = null;
   async function fetchAllBannersFromFile() {
     try {
-      const configUrl = 'https://cdn.jsdelivr.net/gh/Verinice/adsend@d94bb5e3586c3686a74aefe378a7106cac70a599/public/ad-config.json';
+      const configUrl = 'https://cdn.jsdelivr.net/gh/Verinice/adsend@main/public/ad-config.json';
       const res = await fetch(configUrl);
       if (!res.ok) return;
       const configs = await res.json();
