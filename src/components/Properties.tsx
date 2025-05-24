@@ -113,16 +113,22 @@ export default function Properties() {
     if (!newProp.trim()) return;
     const propertyId = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
     // Call API
-    await fetch('/api/properties', {
+    const res = await fetch('/api/properties', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ id: propertyId, name: newProp.trim() })
     });
-    setProperties([
-      ...properties,
-      { id: propertyId, name: newProp.trim(), pages: [] },
-    ]);
-    setNewProp("");
+    const data = await res.json();
+    if (res.ok && data.success) {
+      setProperties([
+        ...properties,
+        { id: propertyId, name: newProp.trim(), pages: [] },
+      ]);
+      setNewProp("");
+      setSnackbar({ open: true, message: 'Property added successfully!', type: 'success' });
+    } else {
+      setSnackbar({ open: true, message: data.error || 'Failed to add property.', type: 'error' });
+    }
   };
 
   // Replace handleDelete with confirmation dialog trigger
