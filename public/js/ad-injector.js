@@ -278,9 +278,14 @@
       adWrapper.style.maxHeight = height + 'px';
     }
     // Replicate all computed styles and classes from sibling
-    const siblings = Array.from(container.children).filter(
+    let siblings = Array.from(container.children).filter(
       el => el !== adWrapper && !el.classList.contains('ad-send-banner')
     );
+    // If copySiblingSelector is set, use the first matching element in the container as the style reference
+    if (copySiblingSelector) {
+      const customRef = container.querySelector(copySiblingSelector);
+      if (customRef) siblings = [customRef];
+    }
     replicateSiblingStyles(adWrapper, siblings);
     const adHtml = getNextAd(container, adHtmlArr);
     adWrapper.innerHTML = adHtml;
@@ -323,10 +328,13 @@
 
   /**
    * Fetch all banners and container selectors for the current page from ad-config.json
+   * Also loads copySiblingSelector for style replication.
    */
+  let copySiblingSelector = null;
   async function fetchAllBannersFromFile() {
     try {
-      const res = await fetch('/ad-config.json');
+      const configUrl = window.location.origin + '/ad-config.json';
+      const res = await fetch(configUrl);
       if (!res.ok) return;
       const configs = await res.json();
       // Find the property config by propertyId
@@ -336,11 +344,8 @@
       if (!config) return;
       // Match by current page URL (ignoring query/hash)
       const pageUrl = window.location.origin + window.location.pathname;
-      // Allow config.url to include query/hash for flexibility
       if (config.url && !pageUrl.startsWith(config.url)) return;
-      // Containers: get selector names (now a flat array)
       containerSelectors = Array.isArray(config.containers) ? config.containers : [];
-      // Defensive: flatten if containers is array of objects
       if (containerSelectors.length && typeof containerSelectors[0] === 'object' && containerSelectors[0].name) {
         containerSelectors = containerSelectors.map(c => c.name).filter(Boolean);
       }
@@ -352,6 +357,7 @@
         }
         return '';
       }).filter(Boolean);
+      copySiblingSelector = config.copySiblingSelector || null;
       bannerIndex = 0;
       rotationOffset = Math.floor(Math.random() * 1000);
     } catch (e) {

@@ -2,9 +2,10 @@
     {
         "id": "1",
         "property_id": "1748096411233-8qa9xz",
-        "name": "Test Site",
-        "url": "http://localhost:3000/test-site",
-        "containers": [".ad-slot"],
+        "name": "nhentai.com",
+        "url": "https://nhentai.com/en/tag/big-breasts",
+        "containers": [".container div .row"],
+        "copySiblingSelector": ".comic .box",
         "banners": [
             {
                 "id": "1",
