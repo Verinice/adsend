@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom dark mode overrides */
+html.dark {
+  background: #0a0a0a;
+}
+body.dark, body[class*="dark"] {
+  background: #0a0a0a;
+  color: #e5e7eb;
+}
+
+/* Example: override some light backgrounds for dark mode */
+.dark .bg-white { background-color: #18181b !important; }
+.dark .bg-gray-50 { background-color: #18181b !important; }
+.dark .bg-blue-50 { background-color: #232334 !important; }
+.dark .bg-green-50 { background-color: #1a2a1a !important; }
+.dark .bg-green-100 { background-color: #223322 !important; }
+.dark .bg-blue-100 { background-color: #1e293b !important; }
+.dark .bg-gradient-to-br, .dark .bg-gradient-to-b, .dark .bg-gradient-to-r {
+  background: linear-gradient(135deg, #18181b 0%, #232334 100%) !important;
+}
+.dark .border-gray-100, .dark .border-green-200, .dark .border-blue-100, .dark .border-gray-200 {
+  border-color: #232334 !important;
+}
+.dark .text-gray-700, .dark .text-green-800, .dark .text-blue-700, .dark .text-blue-400, .dark .text-green-500 {
+  color: #e5e7eb !important;
+}
+.dark .shadow, .dark .shadow-lg, .dark .shadow-xl, .dark .shadow-2xl {
+  box-shadow: 0 2px 16px 0 #0006 !important;
+}
+
+/* Animations for fade-in and pop-in */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fade-in {
+  animation: fade-in 0.25s ease;
+}
+@keyframes pop-in {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.animate-pop-in {
+  animation: pop-in 0.25s cubic-bezier(0.4,0,0.2,1);
+}
