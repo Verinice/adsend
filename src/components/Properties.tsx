@@ -1,9 +1,8 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import type { Property } from "../types";
-import PagesList from "./PagesList"; // Import the PagesList component
-import BannerUpload from "./BannerUpload"; // Import the BannerUpload component
-import { DotsVerticalIcon } from '@heroicons/react/solid';
+import PagesList from "./PagesList";
+import BannerUpload from "./BannerUpload";
 
 export default function Properties() {
   const [properties, setProperties] = useState<Property[]>([]);

@@ -16,7 +16,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" className="dark">
         <head>
-          <title>AdSend Dashboard & Test Site</title>
+          <title>AdSend Dashboard</title>
           <meta name="description" content="Manage properties, pages, containers, and banners for ad injection with AdSend. Test ad injection in a realistic car marketplace layout." />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
