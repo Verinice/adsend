@@ -4,8 +4,24 @@
         "property_id": "1748096411233-8qa9xz",
         "name": "nhentai.com",
         "url": "http://127.0.0.1:5500/",
-        "containers": [".container .gallery"],
-        "copySiblingSelector": ".gallery-link  .gallery-item",
+        "containers": [
+            ".container .gallery"
+        ],
+        "copySiblingSelector": ".col-6",
+        "imageSelector": ".image",
+        "badges": {"selector": ".badges", "tags" : [
+            "nhentai",
+            "gallery",
+            "anime"
+        ]},
+        "title": {
+            "selector": ".title",
+            "text": "[Napata] Imouto no Okage de Motesugite Yabai [English]"
+        },
+        "language": {
+            "selector": ".comic-language",
+            "flag": "cn"
+        },
         "banners": [
             {
                 "id": "1",
