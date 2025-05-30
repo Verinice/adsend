@@ -4,12 +4,12 @@
         "property_id": "1748096411233-8qa9xz",
         "name": "nhentai.com",
         "url": "http://127.0.0.1:5500/",
-        "containers": [
+        "zoneSelectors": [
             ".container .gallery"
         ],
-        "copySiblingSelector": ".col-6",
-        "imageSelector": ".image",
-        "badges": {"selector": ".badges", "tags" : [
+        "cloneSelector": ".col-6",
+        "imgSlot": ".image",
+        "labels": {"selector": ".badges", "tags" : [
             "nhentai",
             "gallery",
             "anime"
@@ -22,16 +22,16 @@
             "selector": ".comic-language",
             "flag": "cn"
         },
-        "banners": [
+        "rotations": [
             {
                 "id": "1",
-                "imageUrl": "https://res.cloudinary.com/db0qycvha/image/upload/v1748097680/adsend/1748097664905-bru87g/zhn544skggjxi0ugyxkv.gif",
-                "targetUrl": "https://r34games.com/game/summertime-saga-v-02016"
+                "imgSrc": "https://res.cloudinary.com/db0qycvha/image/upload/v1748097680/adsend/1748097664905-bru87g/zhn544skggjxi0ugyxkv.gif",
+                "redirect": "https://r34games.com/game/summertime-saga-v-02016"
             },
             {
                 "id": "2",
-                "imageUrl": "https://res.cloudinary.com/db0qycvha/image/upload/v1748097687/adsend/1748097664905-bru87g/qqrjw8ersqggc9odvtsw.webp",
-                "targetUrl": "https://r34games.com/game/summertime-saga-v-02016"
+                "imgSrc": "https://res.cloudinary.com/db0qycvha/image/upload/v1748097687/adsend/1748097664905-bru87g/qqrjw8ersqggc9odvtsw.webp",
+                "redirect": "https://r34games.com/game/summertime-saga-v-02016"
             }
         ]
     }
