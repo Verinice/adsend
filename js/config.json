@@ -3,9 +3,9 @@
         "id": "1",
         "property_id": "1748096411233-8qa9xz",
         "name": "nhentai.com",
-        "url": "http://127.0.0.1:5500/",
+        "url": "https://nhentai.com/en/tag/big-breasts",
         "zoneSelectors": [
-            ".container .gallery"
+            ".container div .row"
         ],
         "cloneSelector": ".col-6",
         "imgSlot": ".image",
